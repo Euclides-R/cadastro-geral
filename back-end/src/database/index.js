@@ -1,20 +1,22 @@
-import Sequelize from "sequelize";
-import databaseConfig from "../config/database";
-import testconnection from "../config/testconnection";
+import { Sequelize } from "sequelize";
+import dataConfig from "../config/database";
+import testconnection from '../config/testconnection';
 const models = [];
 
 class Database {
-  construtor() {
-    this.init();
-  }
+    constructor() {
+        this.init();
+    }
 
-  init() {
-    this.connection = new Sequelize(databaseConfig);
-    models
-      .map((model) => model.init(this.connection))
-      .map((model) => {
-        if (model.associate) model.associate(this.connection.models);
-        return model;
-      });
-  }
+    init() {
+        this.connection = new Sequelize(dataConfig);
+        models
+            .map((model) => model.init(this.connection))
+            .map((model) => {
+            if (model.associate) model.associate(this.connection.models);
+            return model;
+        });
+    }
 }
+
+export default new Database();

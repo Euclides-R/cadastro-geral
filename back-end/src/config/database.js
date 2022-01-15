@@ -1,15 +1,12 @@
-require('dotenv').config()
-
 module.exports = {
     dialect: "postgres",
     host: "localhost",
     username: "postgres",
-    password: process.env.POSTGRE_DATABASE_PASSWORD,
+    password: "eu123",
     database: "pubfuture",
-    define: {
+    define: { 
       timestamps: false,
       underscored: true,
       underscoredAll: true,
     },
   };
-  
