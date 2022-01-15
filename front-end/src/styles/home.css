@@ -1,0 +1,11 @@
+h1 {
+    font-size: 72px;
+    font-weight: bold;
+}
+
+.home {
+    background: blue;
+    border: 1px solid red;
+    height: 300px;
+    width: 500px;
+}
