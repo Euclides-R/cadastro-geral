@@ -1,0 +1,84 @@
+/* Globais */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+  }
+  
+  html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    height: 100vh;
+    color: #333;
+    background: linear-gradient(to top left, #005532 50%, #12b803 75%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .bold-font {
+    font-weight: bold;
+  }
+  
+  form {
+    padding: 10px;
+  }
+  
+  .radius-form {
+    border: 1px solid var(--color);
+    border-radius: 10px 0px;
+  }
+   
+  :root {
+    --black: #0d1317;
+    --blue0: #00111C;
+    --blue1: #002239;
+    --blue2: #003355;
+    --blue3: #006FB9;
+    --blue4: #0099ff;
+    --gray-text: #B8BACF;
+    --green0: #006e90;
+    --green1: #15a402;
+    --green2: #27b803;
+    --green3: #1ccb05;
+    --green4: #06df2a;
+    --white-back: #f5f7fb;
+  }
+  
+  .show-box {
+    background: var(--white-back);
+    height: 100%;
+    margin: 0;
+    padding: 10px;
+    position: relative;
+    text-align: center;
+    min-width: 350px;
+    
+    -webkit-box-shadow: 3px 4px 5px var(--black);
+    -moz-box-shadow: 3px 4px 5px var(--black);
+    box-shadow: 3px 4px 5px var(--black);
+  }
+    
+  .text-bold {
+    font-weight: 380;
+  }
+  
+  .title-page {
+    color: var(--green1);
+    font-size: 50px;
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  .text-size p {
+    color: var(--green1);
+    font-size: 17.5px;
+    text-align: left;
+  }
+  

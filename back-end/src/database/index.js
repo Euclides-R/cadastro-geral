@@ -1,7 +1,10 @@
 import { Sequelize } from "sequelize";
 import dataConfig from "../config/database";
+import Account from "../app/models/Accounts";
+import Receipt from "../app/models/Receipt";
+import Expenditure from "../app/models/Expenditure";
 import testconnection from '../config/testconnection';
-const models = [];
+const models = [Account, Receipt, Expenditure];
 
 class Database {
     constructor() {

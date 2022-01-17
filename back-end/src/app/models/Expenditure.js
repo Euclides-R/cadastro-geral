@@ -14,12 +14,9 @@ class Expenditure extends Model {
           type: Sequelize.DECIMAL,
           allowNull: false,
         },
-        description: {
-          type: Sequelize.TEXT,
-          allowNull: false,
-        },
-        financial_instuition: Sequelize.STRING(100),
-        type_recipe: Sequelize.STRING(100),
+        payment_date: Sequelize.DATE,
+        expected_payment_date: Sequelize.DATE,
+        type_expenditure: Sequelize.STRING(100)
       },
       {
         sequelize,
@@ -28,13 +25,6 @@ class Expenditure extends Model {
     );
 
     return this;
-  }
-
-  static associate(models) {
-    this.belongsTo(models.Accounts, {
-      foreignKey: 'accounts_id',
-      as: 'accounts'
-    })
   }
 }
 
