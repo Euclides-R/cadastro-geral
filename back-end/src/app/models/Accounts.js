@@ -15,14 +15,25 @@ class Account extends Model {
           allowNull: false,
         },
         financial_instuition: Sequelize.STRING(100),
-        type_recipe: Sequelize.STRING(100),
       },
       {
         sequelize,
+        tableName: 'account'
       }
     );
 
     return this;
+  }
+
+  static associate(models) {
+    this.belongsTo(models.Receipt, {
+      foreignKey: 'receipt_id',
+      as: 'receipt'
+    })
+    this.belongsTo(models.Expenditure, {
+      foreignKey: 'expenditure_id',
+      as: 'expenditure'
+    })
   }
 }
 

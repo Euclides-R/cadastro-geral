@@ -7,9 +7,9 @@ export default function Home() {
             <div className='show-box radius-form'>
                 <h1 className='title-page'>DESAFIO</h1>
                 <div className='options'>
-                <Button>CADASTRAR CONTA</Button>
-                <Button>CADASTRAR RECEITA</Button>
-                <Button>CADASTRAR DESPESA</Button>
+                <Button url='accounts'>CADASTRAR CONTA</Button>
+                <Button url='receipt'>CADASTRAR RECEITA</Button>
+                <Button url='expediture'>CADASTRAR DESPESA</Button>
                 </div>
             </div>
         </section>

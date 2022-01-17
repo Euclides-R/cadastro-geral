@@ -15,19 +15,18 @@ class AccountsController {
 
   async index(req, res) {
     const accs = await Account.findAll({
-      attributes: ["id", "value", "financial_instuition", "type_recipe"],
+      attributes: ["id", "value", "financial_instuition"],
       include: [
         {
           model: Expenditure,
           as: "expenditure",
         },
-      ],
-      include: [
         {
           model: Receipt,
-          as: "receipt",
-        },
+          as: 'receipt'
+        }
       ],
+      
     });
     return res.json(accs);
   }
@@ -46,7 +45,7 @@ class AccountsController {
 
   async show(req, res) {
     let acc = await Account.findAll({
-      attributes: ["id", "value", "financial_instuition", "type_recipe"],
+      attributes: ["id", "value", "financial_instuition"],
       include: [
         {
           model: Expenditure,

@@ -14,7 +14,9 @@ class Receipt extends Model {
           type: Sequelize.DECIMAL,
           allowNull: false,
         },
-        financial_instuition: Sequelize.STRING(100),
+        description: Sequelize.TEXT,
+        receipt_date: Sequelize.DATE,
+        expected_receipt_date: Sequelize.DATE,
         type_recipe: Sequelize.STRING(100),
       },
       {
@@ -24,13 +26,6 @@ class Receipt extends Model {
     );
 
     return this;
-  }
-
-  static associate(models) {
-    this.belongsTo(models.Accounts, {
-      foreignKey: 'accounts_id',
-      as: 'accounts'
-    })
   }
 }
 

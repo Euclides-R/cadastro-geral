@@ -1,0 +1,1 @@
+export { default as AccService } from './acc-service';

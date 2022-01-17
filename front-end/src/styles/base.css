@@ -16,7 +16,7 @@
     font-weight: 400;
     height: 100vh;
     color: #333;
-    background: linear-gradient(to top left, #003355 0%, #03A6B8 100%);
+    background: linear-gradient(to top left, #005532 50%, #12b803 75%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -44,10 +44,10 @@
     --blue4: #0099ff;
     --gray-text: #B8BACF;
     --green0: #006e90;
-    --green1: #028aa4;
-    --green2: #03A6B8;
-    --green3: #05c3cb;
-    --green4: #06dfdf;
+    --green1: #15a402;
+    --green2: #27b803;
+    --green3: #1ccb05;
+    --green4: #06df2a;
     --white-back: #f5f7fb;
   }
   
