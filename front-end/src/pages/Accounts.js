@@ -34,7 +34,7 @@ export default function Accounts() {
   return (
     <section>
       <div className="show-box radius-form">
-        <h1 className="title-page">DESAFIO</h1>
+        <h1 className="title-page">Contas</h1>
         <form onSubmit={handleSubmit} className="text-size">
           <p>Número da conta: *</p>
           <Input
